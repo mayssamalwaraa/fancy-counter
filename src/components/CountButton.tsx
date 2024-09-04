@@ -12,7 +12,7 @@ const CountButton = ({ type, count, setCount, locked }: CountButtonProps) => {
       if (count >= 5) return 5;
       setCount((prev) => prev + 1);
     }
-    // event.currentTarget.blur();
+    event.currentTarget.blur();
   };
   return (
     <button disabled={locked} className="count-btn" onClick={handleClick}>
